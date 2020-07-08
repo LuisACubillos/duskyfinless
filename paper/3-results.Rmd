@@ -1,0 +1,14 @@
+# Results
+
+```{r parte_3, include=FALSE}
+#### Code III: Results ####
+```
+
+The body length of the collected specimens fluctuated between 20.3 and 64.5 cm, with a mean of 41.3 cm total length and a standard deviation of 11.7 cm ($n=51$). Of the total number of individuals, 29 are females, 15 females were immature, 8 maturing, and 6 mature. In the case of males, 11 specimens were immature and 11 mature.
+
+The diet analysis showed that 100% of the stomach had contents ($n=51$), from which 44.5% classified as full, and 55.5% was half-full. Decapod crustaceans were the main prey items in the stomach contents and represented by the shrimp _Heterocarpus reedi_, and the deep-sea shrimp _Haliporoides diomedeae_ and the rest were indeterminate crustaceans. According to the quantitative analysis, from a total of 64 prey specimens, _H. reedi_ contributed with 76.56%, identifying the same importance for mass and frequency of occurrence. Indeterminate crustaceans contributed with 12.5%, which were not possible to identify because they were very digested. _H. diomedeae_ represented 9.38% of the diet, and 1.6% was due to an indeterminate mollusk (Table 2). According to the feeding coefficient ($Q$), the preferred prey of Dusky finless skate was _H. reedi_. The deep-sea shrimp _H. diomedeae_ was secondary in the stomach contents.
+
+The stomach contents revealed a very narrow trophic spectrum represented by only three main prey items and a rare prey represented by the indeterminate mollusk. Therefore the cumulative prey curve reached an asymptote after 25 stomachs (Fig. 2). Thus, the sample size was sufficient to describe the diet of the Dusky finless skate.
+
+The 90% quantile regression between prey size and mouth size showed a clear linear border, as well as the relationship between the prey weight in the stomach contents and the body weight of the predator (Fig. 3). The average relationship between prey size and mouth size $PS = - 0.37 + 0.87 \times MS$ ($r^2 = 0.43$, $P<0.01$). Besides, the average weight of preys as a function of body weight showed a linear relationship described by $PW= -0.064 + 0.16 \times BW$ ($r^2=0.72$, $P<0.01$).
+

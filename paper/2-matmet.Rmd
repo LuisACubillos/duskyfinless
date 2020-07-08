@@ -1,0 +1,25 @@
+# Materials and Methods
+
+```{r parte_2, include=FALSE}
+#### Code II: Materials and methods ####
+```
+
+## Study area and sampling
+
+The study area was located on the slope and continental shelf off north-central Chile (Fig. 1), with fishing tows obtained between 25.5ºS to 33ºS on board of trawlers (22 m length, Table 1). The vessel FOCHE was fishing for red squat-lobster (_Pleuroncodes monodon_) and yellow squat-lobster (_Cervimunida johni_), while the second vessel (Isla Orcas) and third vessel (Lonquimay) targeted the shrimp (_Heterocarpus reedi_). The study area has a narrow continental shelf and a steep slope, the reason why the samples were obtained close to the coast at depths between 180 and 511 m (Table 1, Fig. 1).
+Once captured, the specimens of the Dusky finless skate were immediately refrigerated and transported to the Universidad Católica del Norte, Coquimbo laboratory. Each individual, as sex-identified and measured the body length (0.1 cm), disk size (0.1 cm), disk length (0.1 cm), mouth size (0.1 cm) and the total body weight (0.1 g). Classifying the specimens as juvenile or mature. The degree of clasper calcification and the development of testes and reproductive ducts determined the stage of maturity (immature or mature) of the males. In contrast the, maturity stage for females was determined by the uterus condition, the oviduct glands and the ovarian follicles according to Ebert (2005).
+
+## Stomach contents analysis
+
+We removed the stomach and analyzed their contents. The degree of filling of each stomach concerning the ingested food was quantified. The preys found in each stomach were separated, weighed (after drying the excess of surface water with paper, 0.01 g), identified to the lowest taxonomic level, and specimens of each taxon were counted and measured. We measured the size of the crustaceans as the total length (0.1 cm).
+
+We traced the cumulative number of pooled stomachs versus the average cumulative number of the main prey species to determine whether we sampled a sufficient number of Dusky finless skate (Ferry & Caillet 1996, Cortés 1997). We computed the cumulative prey curve as a function of the number of stomachs with the BiodiversityR package (Kindt and Coe 2005) for the software and language R (R Core Team, 2019), analyzing the relative importance of preys in the diet was analyzed according to the following equation:
+
+$$IRI=FO \times (N + W)$$
+where $FO$, $N$, and $W$ are the frequency of occurrence, the number in percentage, and the wet weight (of all prey including hard parts) (Pinkas _et al_. 1971). We expressed the $IRI$ values in percentage to allow comparisons with other studies, ($\%IRI$, Cortés 1997). Also, we calculated the feeding coefficient ($Q$) according to:
+
+$$Q=N \times FO$$
+where $N$ and $FO$ were previously defined, according to Braga & Braga (1987), when $Q>200$, the feeding has a preference, $Q > 20$ the feeding has secondary preys, and $Q<20$ the feeding is supported by rare preys.
+
+We performed a quantile regression to establish the relationships between the prey size and the mouth size, as well as between the prey weight and the body weight of the predator. Quantile regression is a technique we prefer (Scharf _et al_. 1998) because we are interested in the border of the relationships. We used the algorithms described in the “quantreg” package for the language R, using 90% as a quantile that describes the border of the relationships.
+

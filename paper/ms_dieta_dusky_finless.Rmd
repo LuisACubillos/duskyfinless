@@ -1,0 +1,150 @@
+---
+title: |
+  Diet of the Dusky finless skate _Gurgesiella furvescens_ de Buen, 1959 (Chondrichthyes: Rajidae) from the continental shelf and slope of the north-central area of Chile
+author:
+- name: Tania S. Ponce
+  institute: Magister
+- name: Luis A. Cubillos
+  correspondence: yes
+  email: lucubillos@udec.cl
+  institute: Udec
+- name: Enzo Acuña
+  institute: Milenio
+- name: Cecilia Gatica
+  institute: BM
+date: ''
+output:
+  word_document: 
+    reference_docx: ms_word_reference.docx
+subtitle: |
+  Dieta de la raya de profundidad _Gurgesiella furvescens_ de Buen, 1959 (Chondrichthyes: Rajidae) de la plataforma y talud continental del área centro-norte de Chile
+institute:
+- Magister: Magister en Ciencias con mención Pesquerías, Facultad de Ciencias Naturales
+    y Oceanográficas, Universidad de Concepción, Concepción, Chile.
+- Udec: Centro de Investigación Oceanográfica COPAS Sur-Austral, Lab. EPOMAR y Departamento
+    de Oceanografía, Universidad de Concepción, Casilla 160-C,Concepción, Chile.
+- Milenio: Departamento Biología Marina, Millennium Nucleus for Ecology and Sustainable
+    Management of Oceanic Islands (ESMOI), Universidad Católica del Norte, Coquimbo,
+    Chile.
+- BM: Departamento Biología Marina, Universidad Católica del Norte, Coquimbo, Chile.
+toc: false
+---
+
+```{r knitr_setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,
+                      message=FALSE, 
+                      warning=FALSE, 
+                      cache=TRUE,
+                      autodep=TRUE,
+                      fig.path = "../figures/",
+                      #to handle renaming figures without indices.
+                      #From:https://github.com/yihui/knitr/issues/505
+                      fig.process = function(x) {
+                        x2 = sub('-\\d+([.][a-z]+)$', '\\1', x)
+                        if (file.rename(x, x2)) x2 else x
+                        }
+                      )
+```
+
+```{r setup, include=FALSE, cache=FALSE}
+####Setup ####
+#all the packages needed for this manuscript are listed here
+library(MASS)
+library(docxtools)
+library(knitr)
+
+#Set the default theme for ggplot objects to theme_bw()
+#theme_set(theme_bw())
+#theme_update(panel.grid = element_blank())
+```
+
+# Abstract
+
+The Dusky finless skate _Gurgesiella furvescens_ appears sporadically as part of the bycatch in the trawl fishery targeting benthic crustaceans on the continental shelf and upper slope of the north-central area of Chile (26ºS-33ºS). We have few antecedents about biological aspects of the _G. furvescens_, particularly those related to their feeding. In this paper, we determine the diet composition of _G. furvescens_ and relationships between prey size and mouth size and between the weight of the prey and the bodyweight of the predator. We sampled 51 stomachs from individuals obtained from the bycatch of trawls targeting benthic crustaceans in 2013 and 2017. The stomach contents indicate that this skate is consuming mainly shrimp _Heterocarpus reedi_, secondarily deepwater shrimp _Haliporoides diomedeae_, and indeterminate crustaceans. The size of the prey was a linear function of the mouth size, as well as the weight of the prey was related with the bodyweight of the predator. Although squat-lobsters were abundant in the study area, the importance of the shrimp _H. reedi_ and _H. diomedeae_ in the diet of _G. furvescens_ may be due to preference and/or selection of this kind of prey in deep waters. 
+
+**Key words**: skate, diet, prey, specialist feeder.
+
+# Resumen
+
+La raya de profundidad _Gurgesiella furvescens_ aparece esporádicamente como parte de la captura incidental en la pesquería de arrastre dirigida a crustáceos bentónicos en la plataforma continental y talud superior de la zona centro-norte de Chile (26ºS-33ºS). Los antecedentes sobre aspectos biológicos de _G. furvescens_ son pocos, particularmente aquellos relacionados con su alimentación. Nosotros determinamos la composición de la dieta de _G. furvescens_ y las relaciones entre el tamaño de la presa y el tamaño de la boca, y entre el peso de la presa y el peso corporal del depredador. Se obtuvieron 51 estómagos de individuos obtenidos de la captura incidental de la pesca de arrastre dirigidas a crustáceos bentónicos entre 2013 y 2017. El contenido del estómago indica que esta raya consume principalmente camarón naylon _Heterocarpus reedi_, gamba _Haliporoides diomedeae_ y crustáceos indeterminados. El tamaño de la presa fue una función lineal del tamaño de la boca, así como el peso de la presa se relacionó con el peso corporal del depredador. Aunque los langostinos son abundantes en el área de estudio, la importancia de _H. reedi_ y _H. diomedeae_ en la dieta de _G. furvescens_ puede deberse a la preferencia y/o selección de este tipo de presas en aguas profundas.
+
+**Palabras claves**: raya, dieta, presas, predador, especialista
+
+```{r child = '1-intro.Rmd'}
+```
+
+\FloatBarrier
+```{r child = '2-matmet.Rmd'}
+```
+
+\FloatBarrier
+```{r child = '3-results.Rmd'}
+```
+
+\FloatBarrier
+```{r child = '4-discussion.Rmd'}
+```
+
+# Acknowledgements
+
+TP thanks to Christian for helping with the post-processing of the samples at the Fisheries Lab of the Universidad Católica del Norte (UCN), and to the crew of the vessels FOCHE and ISLA ORCAS for providing the samples here analyzed. The  Lab. EPOMAR of the Oceanography Department of the Universidad de Concepción funded LC, and partially funded from COPAS Sur-Austral CONICYT PIA APOYO CCTE AFB170006. All code used to generate this paper, as well as prior versions of this manuscript, are available at: [github.com/LuisACubillos/](https://github.com/LuisACubillos/). 
+
+\FloatBarrier
+
+# Literature cited
+
+**Acuña E, JC Villarroel, A Cortes & M Andrade. 2005**. Capítulo 11. Fauna acompañante en pesquerías de arrastre de crustáceos de Chile: Implicancias y desafíos desde la perspectiva de la Biodiversidad. In: Biodiversidad Marina: Valoración, Usos y Perspectivas ¿Hacia dónde va Chile? Figueroa E (Ed.), Editorial Universitaria. pp. 395-425.
+
+**Acuña E, R. Alarcón, H Arancibia, A Cortés, L Cubillos & L Cid. 2014**. Evaluación directa de langostino colorado y langostino amarillo entre la II y VIII Regiones, año 2013. Informes Técnicos FIP. FIP/IT Nº 2013-02, 384 p.
+
+**Acuña E, R. Alarcón, H Arancibia, A Cortés, L Cubillos & L Cid. 2015**. Evaluación directa de camarón nailon entre la II y VIII Regiones, año 2013. Informes Técnicos FIP. FIP/IT Nº 2013-01, 261 p.
+
+**Arana P, M Ahumada & A Guerrero. 2003**. Distribución y abundancia de la gamba _Haliporoides diomedeae_ (Crustacea: Decapoda: Penaeidae) frente a la costa central de Chile. Investigaciones marinas, Valparaíso 31: 57-71. (http://dx.doi.org/10.4067/S0717-71782003000200006)
+
+**Braga FM de S & AM de S Braga. 1987**. Estudo do hábito alimentar de _Prionotus punctatus_ (Bloch, 1797) (Teleostei, Triglidae), na região da Ilha Anchieta. Estado de São Paulo, Brasil. Revista Brasileira de Biologia 47:31-36.
+
+**Bustamante C, C Vargas-Caro & MB Bennett. 2014**. Biogeographic patterns in the cartilaginous fauna (Pisces: Elasmobranchii and Holocephali) in the southeast Pacific Ocean. PeerJ 2:e416 https://doi.org/10.7717/peerj.416
+
+**Compagno LJV. 1990**. Shark exploitation and conservation. In: Elasmobranchs as living resources: advances in the biology, ecology, systematics, and the status of the fisheries. Pratt HL, SH Gruber & T Taniuchi (Ed). NOAA Technical Report NMFS 90, pp. 397-414.
+
+**Cortés E. 1997**. A critical review of methods of studying fish feeding based on analysis of stomach contents application to elasmobranch fishes. Canadian Journal of Fisheries and Aquatic Science 54: 726-738.
+
+**De Buen F. 1959**. Notas preliminares sobre la fauna marina preabisal de Chile, con descripción de una familia de rayas, dos géneros y siete especies nuevas. Boletín Museo Nacional de Historia Natural, Chile, 27(3): 171-201.
+
+**Ebert DA. 2005**. Reproductive biology of skates, Bathyraja (Ishiyama) along the eastern Bering Sea continental slope. Journal of Fish Biology 66: 618-649. https://doi.org/10.1111/j.0022-1112.2005.00628.x
+
+**Ebert DA & JJ Bizarro. 2007**. Standardized diet compositions and trophic levels of skates (Chondrichthyes: Rajiformes: Rajoidei). In: Ebert DA & JA Sulikowski (Ed) Biology of Skates. Developments in Environmental Biology of Fishes 27. Springer, Dordrecht. https://doi.org/10.1007/978-1-4020-9703-4_8
+
+**Ferry L & G Caillet. 1996**. Sample size and data analysis: are we characterizing and comparing diet properly? In: Feeding, ecology and nutrition in fish. MacKinlay D & K  Shearer (Ed). Symposium Proceedings, American Fisheries Society, San Francisco. pp. 71-80.
+
+**Kindt R & R Coe. 2005**. Tree diversity analysis. A manual and software for common statistical methods for ecological and biodiversity studies. World Agroforestry Centre (ICRAF), Nairobi. ISBN 92-9059-179-X.
+
+**Lamilla J & S Sáez. 2003**. Clave taxonómica para el reconocimiento de especies de rayas chilenas (Chondrichthyes, Batoidei). Investigaciones marinas, Valparaíso 31: 3-16.
+
+**Lamilla J. 2004**. _Gurgesiella furvescens_. In: IUCN 2013. IUCN Red List of Threatened Species. Versión 2013.1
+
+**McEachran J & LJV Compagno. 1979**. A further description of _Gurgesiella furvescens_ with comments on the interrelationships of _Gurgesiellidae_ and _Pseudorajidae_ (Pisces, Rajoidei). Bulletin of Marine Science 29: 530-553.
+
+**McEachran JD & LJV Compagno. 1980**. Results of the research cruises of FRV "Walther Herwig" to South America. LVI. A new species of skate from the southwestern Atlantic _Gurgesiella dorsalifera_ sp. Nov. (Chondrichthyes, Rajoidei). Archiv fur Fischereiwissenschaft 31: 1-14.
+
+**Ñacari L, F Sepulveda, R Escribano & M Oliva. 2018**. _Acanthocotyle gurgesiella_ n. sp. (Monogenea: Acanthocotylidae) from the deep-sea skate _Gurgesiella furvescens_ (Rajidae) in the south-eastern Pacific. Journal of Helminthology 92: 223-227. http://doi.org/10.1017/S0022149X17000220
+
+**Pequeño G. & J  Lamilla. 1993**. Batoideos comunes a las costas de Chile y Argentina-Uruguay (Pisces: Chondrichthyes). Revista de Biología Marina 28: 203-217. https://revbiolmar.uv.cl/escaneados/282-203.pdf
+
+**Pinkas L, MS Oliphant & ILK Inverson. 1971**. Food habits of albacore, bluefin tuna, and bonito in Californian waters. Fishery Bulletin 152: 11–105.
+
+**Priede IG, R Froese, DM Bailey, OA Bergstad, MA Collins, JE Dyb, C Henriques, EG Jones & N King. 2006**. The absence of sharks from abyssal regions of the world's oceans. Proceedings of the Royal Society B, Biological Sciences 273: 1435-1441. https://doi.org/10.1098/rspb.2005.3461
+
+**Queirolo D, K Erzini, CF Hurtado, E Gaete & MC Soriguer. 2011**. Species composition and bycatches of a new crustacean trawl in Chile. Fisheries Research 110: 149–159. https://doi.org/10.1016/j.fishres.2011.04.001
+
+**Rincon G, T Vaske Jr., & CM Vooren. 2008**. Stomach contents and notes on the reproduction of the onefin skate _Gurgesiella dorsalifera_ (Chondrichthyes: Rajidae) off Southern Brazil. Neotropical Ichthyology 6: 689-692. http://dx.doi.org/10.1590/S1679-62252008000400019
+
+**Scharf FS, F Juanes & M Sutherland. 1998**.  Inferring ecological relationships from the edges of scatter diagrams comparison of regression techniques. Ecology 79: 448-460. https://doi.org/10.1890/0012-9658(1998)079[0448:IERFTE]2.0.CO;2
+
+**Sielfeld W & M Vargas. 1996*. Composición y estructura de la ictiofauna demersal en la zona norte de Chile. Investigaciones marinas, Valparaíso 24: 3-17. http://dx.doi.org/10.4067/S0717-71781996002400001.
+
+**Wetherbee BM & E Cortés. 2004**. Food consumption and feeding habits. In: Biology of sharks and their relatives. Musick JA, JC Carried & M Heithaus (Ed). CRC Press, Boca Raton FL, pp. 223-244.
+
+**Wilga CA, PJ Motta & CP Sanford. 2007**. Evolution and ecology of feeding in elasmobranchs. Integrative and Comparative Biology 47: 55-69. https://doi.org/10.1093/icb/icm029
+
+**Yáñez E & MA Barbieri. 1974**. Distribución y abundancia relativa estacional de los recursos disponibles a un arte de arrastre camaronero frente a la costa de Valparaíso (invierno 1973). Investigaciones marinas, Valparaíso 5: 137-156.
